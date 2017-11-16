@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Uploading Files</title>
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<h1 class="title">Upload Files</h1>
+	<div>
+		Subir un archivo: <input type="file" id="file"/> <button onclick="upload()">Subir Archivo</button>
+		<h3 id="uploadStatus"></h3>
+	</div>
+	<div>
+	Subir multiples archivos: <input type="file" multiple id="files"/> <button onclick="mulUpload()">Subir Archivos</button>
+		<h3 id="uploadStatus"></h3>
+	</div>
+	<hr />
+	<div>
+		<button onclick="download()">Descargar un archivo</button>	
+		<img id="myImg" alt="" />	
+	</div>
+	
+	<script src="js/app.js"></script>
+</body>
+</html>
